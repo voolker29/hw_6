@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace task_classes
 {
@@ -14,16 +10,7 @@ namespace task_classes
         {
             productsList.AddRange(product);
         }
-        public Inventory(Product product)
-        {
-            productsList.Add(product);
-        
-        }
-        public Inventory()
-        {
-
-        }
-        public void AddProduct(Product product)
+            public void AddProduct(Product product)
         {
             productsList.Add(product);        
         }
@@ -47,13 +34,7 @@ namespace task_classes
         
         
         }
-        public List<Product> SearchProduct(Product product)
-        {
 
-            var resultSearch = productsList.Where(x => x == product);
-            return resultSearch.ToList();
-
-        }
 
         public int GetProductSumm (Product product )
         {

@@ -21,7 +21,7 @@ SplitConsole();
 var result = stock.SearchProduct("Банан");
 foreach (var item in result)
 { 
-Console.WriteLine($"{item.Id} {item.Price} {item.Count}");
+    Console.WriteLine($"{item.Id} {item.Price} {item.Count}");
 
 }
 
